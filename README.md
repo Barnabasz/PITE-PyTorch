@@ -1,3 +1,3 @@
 # PITE-PyTorch
 Track Reconstruction using pytorh.
-https://travis-ci.com/Kavaldrin/PITE-PyTorch.svg?branch=master
+[![Build Status](https://travis-ci.com/Kavaldrin/PITE-PyTorch.svg?branch=master)](https://travis-ci.com/Kavaldrin/PITE-PyTorch)
