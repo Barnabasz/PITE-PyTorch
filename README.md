@@ -25,8 +25,8 @@ Code can be found hear: [DataAnalysis](https://github.com/Kavaldrin/PITE-PyTorch
 ## SKLEARN:
 
 ### Random forest clasifier:
-We mennaged to get score of 81% accuracy with this model and auc 0.87.
-[ROC](https://github.com/Kavaldrin/PITE-PyTorch/blob/master/RFC.ipynb)
+We mennaged to get score of 81% accuracy with this model and auc 0.87.<br />
+[RFC](https://github.com/Kavaldrin/PITE-PyTorch/blob/master/RFC.ipynb)
     
 
 ## Authors
