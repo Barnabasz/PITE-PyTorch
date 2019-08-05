@@ -6,10 +6,10 @@ Track Reconstruction using pytorch.
 The main goal of the project is to show how different models perform with the problem of binary classification with given data from LHCb experiment, how to build your own model using libraries like sklearn or pytorch and to tune hyperparamiters of your model.
 
 ## current goal:
-Now we are trying to understend the data and create good model that is suposed to predict if the particle with given fitures will be possible to detect in downstream detectors or if it's a "gohst particle".
+Now we are trying to understend the data and create good model that is suposed to predict if the particle with given features will be possible to detect in downstream detectors or if it's a "gohst particle".
 
 ## Future plans:
-We woudl like to prepare some kind of guid or lecture to show how to use machine learning adn deep machine learning models from sklearn and pytorch so that it can be used for teaching at out university.
+We woudl like to prepare some kind of guide or lecture to show how to use machine learning and deep machine learning models from sklearn and pytorch so that it can be used for teaching at our university.
 
 ## Data:
 ### We got over two million samples with 10 features, splited in to two categories determine by **is_downstream_reconstructible** to work with:
