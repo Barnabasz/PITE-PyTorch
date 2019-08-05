@@ -28,6 +28,12 @@ Code can be found hear: [DataAnalysis](https://github.com/Kavaldrin/PITE-PyTorch
 We mennaged to get score of 81% accuracy with this model and auc 0.87.<br />
 With tuning by hand we got 80% accuracy, trying grid serch cross validation and random search we got same result of 81%.<br />
 [RFC](https://github.com/Kavaldrin/PITE-PyTorch/blob/master/RFC.ipynb)
+
+### Support Vector Machines:
+I usually get score of ~80% accuracy with this model and auc 0.86.<br />
+I use NuSVC model. I dropped some features to get better score also to make training faster. Tuning by guessing gave me 80% score.<br />
+I will try to search for better hyperparametrs using Grid Search.<br />
+[SVC](https://github.com/Kavaldrin/PITE-PyTorch/blob/master/svm.ipynb)
     
 
 ## Authors
