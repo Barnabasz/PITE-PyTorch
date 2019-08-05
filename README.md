@@ -20,8 +20,7 @@ We woudl like to prepare some kind of guid or lecture to show how to use machine
 
 ## Also, we create corelation matrix to drop most corelated features:
 ![](Corelation.PNG)
-
-## Code can be found hear: [DataAnalysis](https://github.com/Kavaldrin/PITE-PyTorch/blob/master/DataAnalysis.ipynb)
+Code can be found hear: [DataAnalysis](https://github.com/Kavaldrin/PITE-PyTorch/blob/master/DataAnalysis.ipynb)
     
     
   
