@@ -5,7 +5,7 @@ Track Reconstruction using pytorch.
 
 The main goal of the project is to show how different models perform with the problem of binary classification with given data from LHCb experiment, how to build your own model using libraries like sklearn or pytorch and to tune hyperparamiters of your model.
 
-## Curent goal:
+## current goal:
 Now we are trying to understend the data and create good model that is suposed to predict if the particle with given fitures will be possible to detect in downstream detectors or if it's a "gohst particle".
 
 ## Future plans:
@@ -13,17 +13,21 @@ We woudl like to prepare some kind of guid or lecture to show how to use machine
 
 ## Data:
 ### We got over two million samples with 10 features, splited in to two categories determine by **is_downstream_reconstructible** to work with:
-![](data.PNG)
+![](images/data.PNG)
 
 ### To understeand our data we split it for two classes and compare them side by side like this:
-![](Histograms.PNG)
+![](images/Histograms.PNG)
 
-## Also, we create corelation matrix to drop most corelated features:
-![](Corelation.PNG)
+### Also, we create corelation matrix to drop most corelated features:
+![](images/Corelation.PNG)
 Code can be found hear: [DataAnalysis](https://github.com/Kavaldrin/PITE-PyTorch/blob/master/DataAnalysis.ipynb)
     
+##SKLEARN:
+
+### Random forest clasifier:
+    We mennaged to get score of 81% accuracy with this model and auc 0.87.
+    [ROC](https://github.com/Kavaldrin/PITE-PyTorch/blob/master/RFC.ipynb)
     
-  
 
 ## Authors
 
