@@ -26,6 +26,7 @@ Code can be found hear: [DataAnalysis](https://github.com/Kavaldrin/PITE-PyTorch
 
 ### Random forest clasifier:
 We mennaged to get score of 81% accuracy with this model and auc 0.87.<br />
+With tuning by hand we got 80% accuracy, trying grid serch cross validation and random search we got same result of 81%.<br />
 [RFC](https://github.com/Kavaldrin/PITE-PyTorch/blob/master/RFC.ipynb)
     
 
