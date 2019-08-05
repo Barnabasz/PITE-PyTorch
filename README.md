@@ -22,7 +22,7 @@ We woudl like to prepare some kind of guid or lecture to show how to use machine
 ![](images/Corelation.PNG)
 Code can be found hear: [DataAnalysis](https://github.com/Kavaldrin/PITE-PyTorch/blob/master/DataAnalysis.ipynb)
     
-##SKLEARN:
+## SKLEARN:
 
 ### Random forest clasifier:
     We mennaged to get score of 81% accuracy with this model and auc 0.87.
