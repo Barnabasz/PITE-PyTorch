@@ -34,7 +34,13 @@ I usually get score of ~80% accuracy with this model and auc 0.86.<br />
 I use NuSVC model. I dropped some features to get better score also to make training faster. Tuning by guessing gave me 80% score.<br />
 I will try to search for better hyperparametrs using Grid Search.<br />
 [SVC](https://github.com/Kavaldrin/PITE-PyTorch/blob/master/svm.ipynb)
-    
+
+### Naive bayes classifier:
+In this case results were really weak in comparasion with classifiers above. <br />
+We managed to get accuracy around 69%. We have choosen Gaussian Kernel because of continous values in data set. <br />
+It was almost impossible to tune this model, because of lack of hyperparameteres. <br />
+Using this model we have removed dependency in data set to get best results <br />
+[GaussianNB](https://github.com/Kavaldrin/PITE-PyTorch/blob/master/GaussianNB%20KNeighbors%20SVM.ipynb)
 
 ## Authors
 
