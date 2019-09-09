@@ -42,6 +42,15 @@ It was almost impossible to tune this model, because of lack of hyperparameteres
 Using this model we have removed dependency in data set to get best results <br />
 [GaussianNB](https://github.com/Kavaldrin/PITE-PyTorch/blob/master/GaussianNB%20KNeighbors%20SVM.ipynb)
 
+### K Nearest Neighbours classifier:
+Results which we got using this classifier were slighty better than using NB classifier, accuracy around 75%. <br />
+In this case we have used grid search to tune model and find best values of hyperparameters. <br />
+The most important hyperparameter is number of neighbours, we got best results for 25.
+Another thing which was important to get best results -> we had to normalize values in data set because this classifier is very sensitive to data sets where every value of feature is in another scale.
+[KNN](https://github.com/Kavaldrin/PITE-PyTorch/blob/master/GaussianNB%20KNeighbors%20SVM.ipynb)
+
+
+
 ## Authors
 
 * **Kamil Hałat** - [Barnabasz](https://github.com/Barnabasz)
