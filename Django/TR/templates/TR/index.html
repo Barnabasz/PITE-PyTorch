@@ -1,0 +1,25 @@
+<h1>Pytorch predict</h1>
+<form action="{% url 'predict' %}" method="get">
+	{% csrf_token %}
+	seed_chi2PerDoF
+	<input type="number" name="seed_chi2PerDoF" step="0.000001"><br>
+	seed_p
+	<input type="number" name="seed_p" step="0.000001"><br>
+	seed_pt
+	<input type="number" name="seed_pt" step="0.000001"><br>
+	seed_nLHCbIDs
+	<input type="number" name="seed_nLHCbIDs" step="0.000001"><br>
+	seed_nbIT
+	<input type="number" name="seed_nbIT" step="0.000001"><br>
+	seed_nLayers
+	<input type="number" name="seed_nLayers" step="0.000001"><br>
+	seed_x
+	<input type="number" name="seed_x" step="0.000001"><br>
+	seed_y
+	<input type="number" name="seed_y" step="0.000001"><br>
+	seed_tx
+	<input type="number" name="seed_tx" step="0.000001"><br>
+	seed_ty
+	<input type="number" name="seed_ty" step="0.000001"><br>
+	<input type="submit" value="Predict">
+</form>
