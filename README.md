@@ -25,8 +25,8 @@ Code can be found hear: [DataAnalysis](https://github.com/Kavaldrin/PITE-PyTorch
 ## SKLEARN:
 
 ### Random forest clasifier:
-We mennaged to get score of 81% accuracy with this model and auc 0.87.<br />
-With tuning by hand we got 80% accuracy, trying grid serch cross validation and random search we got same result of 81%.<br />
+We mennaged to get score of 81% accuracy with this model and auc 0.87 tuning hyperparameters by hand.<br />
+Trying grid serch cross validation and random search we got better result of 82% and auc 0.88.<br />
 [RFC](https://github.com/Kavaldrin/PITE-PyTorch/blob/master/RFC.ipynb)
 
 ### Support Vector Machines:
