@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 import torch
+import numpy as np
+import pickle
 from torch import nn
+from sklearn.preprocessing import StandardScaler
 
 class LogisticRegressionModel(nn.Module):
     def __init__(self, input_dim, n_hiden, first_hiden = 0, center_hiden = 0 , last_hiden = 2): 
@@ -29,9 +32,13 @@ class LogisticRegressionModel(nn.Module):
         y = Sigm(self.leyer_list[-1](x))
         return y
     def pred(self, *features):
-        features = torch.tensor(features)
-        return (self(features) > 0.5).item()
-
+        features_list = np.array([list(features)])
+        features_list = self.scaler.transform(features_list)
+        
+        features = torch.FloatTensor(features_list)
+        return (self(features[0]) > 0.5).item()
+    def loadScaler(self, scaler):
+        self.scaler = scaler
 
 n_hiden = 14
 input_dim = 10
@@ -41,8 +48,10 @@ last_hiden = 15
 params = [n_hiden, first_hiden, center_hiden, last_hiden]
 model = LogisticRegressionModel(input_dim, *params)
 model.load_state_dict(torch.load("model{}_{}_{}_{}".format(*params), map_location=torch.device('cpu')))
-
+with open("scaler",'rb') as filename:
+    scaler = pickle.load(filename)
+model.loadScaler(scaler)
 
 if(__name__ == "__main__"):
-    print(model.pred(-0.9627, -0.0090, -0.0079,  0.6588, -0.5875,  0.7196, -0.5029,  0.5987, -0.4837,  0.9176)) #False
-    print(model.pred(0.6877, -0.0080, -0.0159,  0.4448, -0.5875,  0.7196, -0.3897,  0.9181, 0.1569,  0.9379)) #True
+    print(model.pred(1.447929, 1849.101146, 1083.522737, 27.0, 0.0, 12.0, -1418.736880, -143.095899, -0.722093, -0.038671)) #False
+    print(model.pred(0.354945, 10085.622823, 1345.148537, 24.0, 0.0, 12.0, -393.699553, -284.193871, -0.129122, -0.037920)) #True
