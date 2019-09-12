@@ -28,11 +28,10 @@ class LogisticRegressionModel(nn.Module):
             x = Relu(layer(x))
         y = Sigm(self.leyer_list[-1](x))
         return y
+    def pred(self, *features):
+        features = torch.tensor(features)
+        return (self(features) > 0.5).item()
 
-
-def pred(model, *features):
-    features = torch.tensor(features)
-    print((model(features) > 0.5).item())
 
 n_hiden = 14
 input_dim = 10
@@ -45,5 +44,5 @@ model.load_state_dict(torch.load("model{}_{}_{}_{}".format(*params), map_locatio
 
 
 if(__name__ == "__main__"):
-    pred(model, -0.9627, -0.0090, -0.0079,  0.6588, -0.5875,  0.7196, -0.5029,  0.5987, -0.4837,  0.9176) #False
-    pred(model, 0.6877, -0.0080, -0.0159,  0.4448, -0.5875,  0.7196, -0.3897,  0.9181, 0.1569,  0.9379) #True
+    print(model.pred(-0.9627, -0.0090, -0.0079,  0.6588, -0.5875,  0.7196, -0.5029,  0.5987, -0.4837,  0.9176)) #False
+    print(model.pred(0.6877, -0.0080, -0.0159,  0.4448, -0.5875,  0.7196, -0.3897,  0.9181, 0.1569,  0.9379)) #True
