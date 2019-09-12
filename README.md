@@ -24,6 +24,9 @@ Code can be found hear: [DataAnalysis](https://github.com/Kavaldrin/PITE-PyTorch
     
 ## SKLEARN:
 
+### Logistic regresion:
+For varius solvers {‘newton-cg’, ‘lbfgs’, ‘liblinear’, ‘sag’, ‘saga’}  and penaltty {‘l1’, ‘l2’, ‘elasticnet’} and max iterations {50, 150, 1000} we got similar score of 71% accuracy. 
+
 ### Random forest clasifier:
 We mennaged to get score of 81% accuracy with this model and auc 0.87 tuning hyperparameters by hand.<br />
 Trying grid serch cross validation and random search we got better result of 82% and auc 0.88.<br />
