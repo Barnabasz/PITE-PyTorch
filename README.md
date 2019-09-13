@@ -25,7 +25,7 @@ Code can be found hear: [DataAnalysis](https://github.com/Kavaldrin/PITE-PyTorch
 ## SKLEARN:
 
 ### Logistic regresion:
-For varius solvers {‘newton-cg’, ‘lbfgs’, ‘liblinear’, ‘sag’, ‘saga’}  and penaltty {‘l1’, ‘l2’, ‘elasticnet’} and max iterations {50, 150, 1000} we got similar score of 71% accuracy. 
+For varius solvers {‘newton-cg’, ‘lbfgs’, ‘liblinear’, ‘sag’, ‘saga’}  and penaltty {‘l1’, ‘l2’, ‘elasticnet’} and max iterations {50, 150, 1000} we got similar score of 71% accuracy. [Logistic regresion]
 
 ### Random forest clasifier:
 We mennaged to get score of 81% accuracy with this model and auc 0.87 tuning hyperparameters by hand.<br />
@@ -62,7 +62,15 @@ Another thing which was important to get best results -> we had to normalize val
 * **Michał Piwowarczyk** - [MichalPiwo](https://github.com/MichalPiwo)
 See also the list of [contributors](https://github.com/Kavaldrin/PITE-PyTorch/contributors) who participated in this project.
 
+## PyTorch
+### Logistic regresion
+Pytorch let us got much beter resoults, we used logistic regression model with deep neural network generated in various shapes, and with tuning by hand give us satisfying results: accuracy = 88.8% and loss = 0.279,
+with auc = 0.95.<br /> 
+[pytorch - logistic regresion](https://github.com/Kavaldrin/PITE-PyTorch/blob/master/Binary%20clasification.ipynb)
 
+## Django
+We created simple web service using Django that let user pass one data sample to model and gives back prediction based on a trained mod. 
+Sadly we weren't able to put it on our academic web server. [Django](https://github.com/Kavaldrin/PITE-PyTorch/tree/master/Django)
 
 # [![Build Status](https://travis-ci.com/Kavaldrin/PITE-PyTorch.svg?branch=master)](https://travis-ci.com/Kavaldrin/PITE-PyTorch)
   
